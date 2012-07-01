@@ -9,7 +9,7 @@ class X264 < Formula
   head 'http://git.videolan.org/git/x264.git', :branch => 'stable'
 
   depends_on 'yasm' => :build
-  depends_on 'homebrew/dupes/gcc' => :optional
+  depends_on 'homebrew/dupes/gcc' => [:optional, :build]
 
   def options
     [["--10-bit", "Make a 10-bit x264. (default: 8-bit)"]]
