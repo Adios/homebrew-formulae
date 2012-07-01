@@ -5,7 +5,7 @@ class Rtorrent < Formula
   homepage 'http://libtorrent.rakshasa.no/'
   md5 '72c3e9ab859bda7cc8aa96c0b508b09f'
 
-  depends_on 'Adios/formulae/gcc'
+  depends_on 'Adios/formulae/gcc' => :build
   depends_on 'pkg-config' => :build
   depends_on 'libsigc++'
   depends_on 'Adios/formulae/libtorrent'

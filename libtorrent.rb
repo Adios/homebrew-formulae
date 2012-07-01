@@ -5,7 +5,7 @@ class Libtorrent < Formula
   url 'http://libtorrent.rakshasa.no/downloads/libtorrent-0.13.2.tar.gz'
   md5 '96c0b81501357df402ab592f59ecaeab'
 
-  depends_on 'Adios/formulae/gcc'
+  depends_on 'Adios/formulae/gcc' => :build
   depends_on 'pkg-config' => :build
   depends_on 'libsigc++'
 
