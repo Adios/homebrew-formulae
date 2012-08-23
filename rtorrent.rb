@@ -12,8 +12,8 @@ class Rtorrent < Formula
   depends_on 'xmlrpc-c' => :optional
 
   def install
-    ENV['CC'] = 'gcc-4.4'
-    ENV['CXX'] = 'g++-4.4'
+    ENV['CC'] = 'gcc-4.7'
+    ENV['CXX'] = 'g++-4.7'
 
     args = ["--disable-debug", "--disable-dependency-tracking", "--prefix=#{prefix}"]
     args << "--with-xmlrpc-c" if Formula.factory("xmlrpc-c").installed?

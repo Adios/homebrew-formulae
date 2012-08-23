@@ -10,8 +10,8 @@ class Libtorrent < Formula
   depends_on 'libsigc++'
 
   def install
-    ENV['CC'] = 'gcc-4.4'
-    ENV['CXX'] = 'g++-4.4'
+    ENV['CC'] = 'gcc-4.7'
+    ENV['CXX'] = 'g++-4.7'
     ENV['OPENSSL_LIBS'] = '-lcrypto -lssl'
     ENV['OPENSSL_CFLAGS'] = '-I/usr/include'
 
