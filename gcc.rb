@@ -8,7 +8,7 @@ class Gcc < Formula
 
   depends_on 'gmp'
   depends_on 'libmpc'
-  depends_on 'mpfr'
+  depends_on 'Adios/formulae/mpfr'
 
   skip_clean :all
 
